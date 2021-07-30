@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.Alta_fragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/palanquin_medium"
+        android:text="Alta Persona"
+        android:textAlignment="center"
+        android:textColor="@color/gob"
+        android:textSize="35dp" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="DNI"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono lineas"
+        app:startIconDrawable="@drawable/ic_dni"
+        app:errorEnabled="true"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frgalta_et_dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono persona"
+        app:startIconDrawable="@drawable/ic_add_person"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono persona"
+        app:startIconDrawable="@drawable/ic_add_person"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha Nacimiento"
+        app:helperText="Obligatorio , AÑO/MES/DIA ej (2000/12/28)"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono calendario"
+        app:startIconDrawable="@drawable/ic_fecha"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_fecha_nac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/palanquin"
+            android:text="Genero"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rb_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:checked="true"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rb_femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/rb_otro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Otro" />
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"
+        app:startIconContentDescription="Icono mapa"
+        app:startIconDrawable="@drawable/ic_direccion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        app:startIconContentDescription="Icono Telefono"
+        app:startIconDrawable="@drawable/ic_telefono"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ocupacion"
+        app:startIconContentDescription="Icono herramienta"
+        app:startIconDrawable="@drawable/ic_ocupacion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_Ocupacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresos economicos Mensuales"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono simbolo dinero"
+        app:startIconDrawable="@drawable/ic_dinero">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_iem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/frgalta_btn_alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="ALTA PERSONA" />
+
+</LinearLayout>
+
+</ScrollView>

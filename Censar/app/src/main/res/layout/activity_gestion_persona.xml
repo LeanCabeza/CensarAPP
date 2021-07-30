@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".view.GestionPersona">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+        android:id="@+id/g_tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/palanquin_medium"
+        android:text="Gestion Persona"
+        android:textAlignment="center"
+        android:textColor="@color/gob"
+        android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/g_tv_dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/palanquin"
+            android:text="DNI"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono persona"
+        app:startIconDrawable="@drawable/ic_add_person"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            app:helperText="Obligatorio"
+            app:helperTextEnabled="true"
+            app:startIconContentDescription="Icono persona"
+            app:startIconDrawable="@drawable/ic_add_person"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/g_et_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Nacimiento"
+            android:inputType="date"
+            app:helperText="Obligatorio , AÑO/MES/DIA ej (2000/12/28)"
+            app:helperTextEnabled="true"
+            app:startIconContentDescription="Icono calendario"
+            app:startIconDrawable="@drawable/ic_fecha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/g_fecha_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sexo"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono planilla"
+        app:startIconDrawable="@drawable/ic_sexo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"
+        app:startIconContentDescription="Icono mapa"
+        app:startIconDrawable="@drawable/ic_direccion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        app:startIconContentDescription="Icono Telefono"
+        app:startIconDrawable="@drawable/ic_telefono"
+        android:inputType="number"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ocupacion"
+        app:startIconContentDescription="Icono herramienta"
+        app:startIconDrawable="@drawable/ic_ocupacion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_Ocupacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresos economicos Mensuales"
+        app:helperText="Obligatorio"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Icono simbolo dinero"
+        app:startIconDrawable="@drawable/ic_dinero">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/g_et_iem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/g_btn_modificar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="Modificar"
+            android:textColor="#489B31"
+            app:icon="@drawable/ic_baseline_edit_24"
+            app:iconTint="@android:color/holo_green_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/g_btn_baja"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baja"
+            android:textColor="#FF0000"
+            app:icon="@drawable/ic_baseline_delete_forever_24"
+            app:iconTint="@color/design_default_color_error" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

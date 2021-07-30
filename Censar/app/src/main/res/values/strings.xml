@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Censar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Confirma la eliminacion ?</string>
+    <string name="supporting_text">Recuerde que se eliminara permanentemente de la base de Datos.</string>
+    <string name="decline">Rechazar</string>
+    <string name="accept">Aceptar</string>
+    <string name="title_mod">Confirma la modificacion ?</string>
+    <string name="supporting_text_mod">Recuerde que se actualizara el registro modificado</string>
+</resources>
